@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
 <body>
-    
+      <!-- Menú con Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Lo quieres, te lo vendo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadisticas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <table id="miTabla" class="table table-bordered">
+  <thead>
+    <tr>
+      <th>letra</th>
+      <th>nombre</th>
+      <th>apellido</th>
+      <th>pais</th>
+      <th>animal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fila 1, m</td>
+      <td>Fila 1, martin</td>
+      <td>Fila 1, martinez</td>
+      <td>Fila 1, malasia</td>
+      <td>Fila 1, manati</td>
+    </tr>
+    <tr>
+      <td>Fila 2, a</td>
+      <td>Fila 2, ana</td>
+      <td>Fila 2, alvarez</td>
+      <td>Fila 2, argentina</td>
+      <td>Fila 2, armadillo</td>
+    </tr>
+    <tr>        
+      <td>Fila 3, p</td>
+      <td>Fila 3, pedro</td>
+      <td>Fila 3, perez</td>
+      <td>Fila 3, peru</td>
+      <td>Fila 3, perro</td>
+    </tr>
+    <tr>
+      <td>Fila 4, s</td>
+      <td>Fila 4, susana</td>
+      <td>Fila 4, suarez</td>
+      <td>Fila 4, suecia</td>
+      <td>Fila 4, serpiente</td>
+    </tr>
+    <tr>
+      <td>Fila 5, l</td>
+      <td>Fila 5, laura</td>
+      <td>Fila 5, lopez</td>
+      <td>Fila 5, libano</td>
+      <td>Fila 5, leon</td>
+    </tr>
+    <tr>
+      <td>Fila 6, j</td>
+      <td>Fila 6, juan</td>
+      <td>Fila 6, jimenez</td>
+      <td>Fila 6, japon</td>
+      <td>Fila 6, jaguar</td>
+
+    </tr>
+    <tr>
+      <td>Fila 7, c</td>
+      <td>Fila 7, carla</td>
+      <td>Fila 7, castro</td>
+      <td>Fila 7, canada</td>
+      <td>Fila 7, camello</td>  
+    </tr>
+    <tr>
+      <td>Fila 8, r</td>
+      <td>Fila 8, roberto</td>
+      <td>Fila 8, ramirez</td>
+      <td>Fila 8, rusia</td>
+      <td>Fila 8, rinoceronte</td>
+    </tr>
+    <tr>    
+      <td>Fila 9, e</td>
+      <td>Fila 9, elena</td>
+      <td>Fila 9, estrada</td>
+      <td>Fila 9, españa</td>
+      <td>Fila 9, elefante</td>
+    </tr>
+    <tr>
+      <td>Fila 10, t</td>
+      <td>Fila 10, tomas</td>
+      <td>Fila 10, torres</td>
+      <td>Fila 10, tailandia</td>
+      <td>Fila 10, tigre</td>
+    </tr>
+
+  </tbody>
+</table>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#miTabla').DataTable();
+  });
+</script>
 </body>
 </html>
